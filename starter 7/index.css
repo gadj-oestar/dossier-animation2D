@@ -1,0 +1,20 @@
+body,
+main {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+}
+
+div {
+  width: 10vw;
+  height: 10vh;
+  background-color: #f15bb5;
+  /* yellow : '#f15bb5' */
+}

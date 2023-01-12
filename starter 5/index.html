@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATELIER 5</title>
+  <link href="./index.css" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+  <form class="login" >
+    <input type="text" id="name" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button id="button" class="animate__animated animate__bounceIn  " type="submit">Login</button>
+
+    
+  </form>
+
+  <script>
+     let input_name= document.getElementById("name");
+     let input_password= document.getElementById("password");
+     let button = document.getElementById("button");
+     button.addEventListener("click", function(event) {
+      event.preventDefault();
+     })
+       
+     button.addEventListener("click",  () => {
+      if( (input_name.value.length===0)&& (input_password.value.length===0) ){
+        button.style.animation="shakeX 1s forwards"
+      }
+      else if(  (input_name.value.length>0)&&(input_password.value.length>0)){
+        button.style.animation=" tada 3s forwards";
+
+        window.location.href="https://www.google.fr/";
+        
+
+
+
+    }
+    })
+
+  </script>
+</body>
+
+</html>

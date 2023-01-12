@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FABC20;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  width: 480px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 8px solid #fcd779;
+  border-top: 8px solid white;
+  border-radius: 50%;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.spinner:hover{
+  transform: rotate(360deg);
+}

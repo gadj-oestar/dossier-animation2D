@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: white;
+  height: 100vh;
+}
+
+#container {
+  width: 480px;
+  display: flex;
+  align-items: flex-start;
+}
+
+ul {
+  background-color: #1d3557;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-weight: 0;
+
+}
+
+li {
+  list-style: none;
+  margin: 1rem;
+  display: flex;
+  position: relative;
+  left: 10%;
+}
+
+li label {
+  opacity: 0.5;
+
+}
+
+li lottie-player{
+  position: absolute;
+  width: 70%;
+  height: 30vh;
+  top: -75px;
+  left: -50%;
+ 
+  
+}
+
+li input {
+  margin-right: 1rem;
+}
+
